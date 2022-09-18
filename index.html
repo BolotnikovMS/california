@@ -17,7 +17,7 @@
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="#">all products</a></li>
-          <li class="dropdown"><a href="#">Solutions</a>
+          <li class="dropdown-toggle"><a href="#" >Solutions</a>
             <ul class="dropdown-menu">
               <li><a href="#">Phones</a></li>
               <li><a href="#">Tablets</a></li>
@@ -29,12 +29,13 @@
         </ul>
       </nav>
       <div class="basket">
-        <button class="btn-search">
+        <a href="#search" class="btn-search">
           <img src="./icons/search.svg" alt="Search">
-        </button>
+        </a>
         <a href="#" class="basket__links">
           <img src="./icons/basket.svg" alt="Basket">
         </a>
+        <div class="basket__count"></div>
       </div>
     </div>
   </div>
@@ -108,63 +109,75 @@
           <p>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
         </div>
       </div>
-      <div class="popular-product-cards">
-        <div class="popular-product">
-          <div class="popular-product__img">
+      <div class="product-cards">
+        <div class="product">
+          <div class="product__img">
             <img src="./img/popular-products/01.png" alt="MacBook Pro 13">
           </div>
-          <div class="popular-product__content">
-            <h3 class="popular-product__title">
+          <div class="product__content">
+            <h3 class="product__title">
               <a href="#">MacBook Pro 13</a>
             </h3>
-            <div class="popular-product__text">
+            <div class="product__text">
               <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
             </div>
-            <div class="popular-product__price">$ 1,200.00 USD</div>
+            <div class="product__price">$ 1,200.00 USD</div>
+            <div class="product__btns">
+              <button class="product__add btn">Add to Basket</button>
+            </div>
           </div>
         </div>
-        <div class="popular-product">
-          <div class="popular-product__img">
+        <div class="product">
+          <div class="product__img">
             <img src="./img/popular-products/02.png" alt="">
           </div>
-          <div class="popular-product__content">
-            <h3 class="popular-product__title">
+          <div class="product__content">
+            <h3 class="product__title">
               <a href="#">
                 Smart Galaxy Watch 3
               </a>
             </h3>
-            <div class="popular-product__text">
+            <div class="product__text">
               <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
             </div>
-            <div class="popular-product__price">$ 199.00 USD</div>
+            <div class="product__price">$ 199.00 USD</div>
+            <div class="product__btns">
+              <button class="product__add btn">Add to Basket</button>
+            </div>
           </div>
         </div>
-        <div class="popular-product">
-          <div class="popular-product__img">
+        <div class="product">
+          <div class="product__img">
             <img src="./img/popular-products/03.png" alt="">
           </div>
-          <div class="popular-product__content">
-            <h3 class="popular-product__title">
+          <div class="product__content">
+            <h3 class="product__title">
               <a href="#">MacBook Air M1</a>
             </h3>
-            <div class="popular-product__text">
+            <div class="product__text">
               <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
             </div>
-            <div class="popular-product__price">$ 1,009.00 USD</div>
+            <div class="product__price">$ 1,009.00 USD</div>
+            <div class="product__btns">
+              <button class="product__add btn">Add to Basket</button>
+            </div>
           </div>
         </div>
-        <div class="popular-product">
-          <div class="popular-product__img">
+        <div class="product">
+          <div class="product__img">
             <img src="./img/popular-products/04.png" alt="">
           </div>
-          <div class="popular-product__content">
-            <h3 class="popular-product__title">
+          <div class="product__content">
+            <h3 class="product__title">
               <a href="#">iPad</a>
             </h3>
-            <div class="popular-product__text">
+            <div class="product__text">
               <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
             </div>
-            <div class="popular-product__price">$ 610.00 USD</div>
+            <div class="product__price">$ 610.00 USD</div>
+            <div class="product__btns">
+              <button class="product__add btn">Add to Basket</button>
+            </div>
           </div>
         </div>
       </div>
@@ -247,7 +260,7 @@
     </div>
   </div>
 </section>
-    <section class="search">
+    <section class="search" id="search">
   <div class="container">
     <div class="search-wrap">
       <div class="search__titles search__titles_mrnone">
@@ -256,6 +269,9 @@
       <form class="search-form">
         <div class="search-form__content">
           <div class="search-form__group">
+            <button type="submit" class="search-form__btn">
+              <img src="./icons/search.svg" alt="Search">
+            </button>
             <input type="text" name="keyword" class="search-form__input" placeholder="Search keyword">
           </div>
           <div class="search-form__keywords">
