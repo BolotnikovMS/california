@@ -17,7 +17,7 @@
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="#">all products</a></li>
-          <li class="dropdown-toggle"><a href="#" >Solutions</a>
+          <li class="dropdown-toggle"><a href="#!" >Solutions</a>
             <ul class="dropdown-menu">
               <li><a href="#">Phones</a></li>
               <li><a href="#">Tablets</a></li>
@@ -36,6 +36,11 @@
           <img src="./icons/basket.svg" alt="Basket">
         </a>
         <div class="basket__count"></div>
+        <button type="button" class="nav__toggle">
+          <div class="menu-icon-wrapper">
+            <div class="menu-icon"></div>
+          </div>
+        </button>
       </div>
     </div>
   </div>
@@ -45,7 +50,7 @@
   <main>
     <section class="home">
   <div class="container">
-    <div class="slider owl-carousel">
+    <div class="slider owl-carousel slide-one">
       <div class="slider__item">
         <div class="slider__wrap">
           <div class="slider__content">
@@ -109,74 +114,139 @@
           <p>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
         </div>
       </div>
-      <div class="product-cards">
-        <div class="product">
-          <div class="product__img">
-            <img src="./img/popular-products/01.png" alt="MacBook Pro 13">
-          </div>
-          <div class="product__content">
-            <h3 class="product__title">
-              <a href="#">MacBook Pro 13</a>
-            </h3>
-            <div class="product__text">
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+      <div class="product-cards owl-carousel slide-two">
+        <div class="item">
+          <div class="product">
+            <div class="product__img">
+              <img src="./img/popular-products/01.png" alt="MacBook Pro 13">
             </div>
-            <div class="product__price">$ 1,200.00 USD</div>
-            <div class="product__btns">
-              <button class="product__add btn">Add to Basket</button>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="./img/popular-products/02.png" alt="">
-          </div>
-          <div class="product__content">
-            <h3 class="product__title">
-              <a href="#">
-                Smart Galaxy Watch 3
-              </a>
-            </h3>
-            <div class="product__text">
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-            </div>
-            <div class="product__price">$ 199.00 USD</div>
-            <div class="product__btns">
-              <button class="product__add btn">Add to Basket</button>
+            <div class="product__content">
+              <h3 class="product__title">
+                <a href="#">MacBook Pro 13</a>
+              </h3>
+              <div class="product__text">
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+              </div>
+              <div class="product__price">$ 1,200.00 USD</div>
+              <div class="product__btns">
+                <button class="product__add btn">Add to Basket</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="./img/popular-products/03.png" alt="">
-          </div>
-          <div class="product__content">
-            <h3 class="product__title">
-              <a href="#">MacBook Air M1</a>
-            </h3>
-            <div class="product__text">
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <div class="item">
+          <div class="product">
+            <div class="product__img">
+              <img src="./img/popular-products/02.png" alt="">
             </div>
-            <div class="product__price">$ 1,009.00 USD</div>
-            <div class="product__btns">
-              <button class="product__add btn">Add to Basket</button>
+            <div class="product__content">
+              <h3 class="product__title">
+                <a href="#">
+                  Smart Galaxy Watch 3
+                </a>
+              </h3>
+              <div class="product__text">
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+              </div>
+              <div class="product__price">$ 199.00 USD</div>
+              <div class="product__btns">
+                <button class="product__add btn">Add to Basket</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="./img/popular-products/04.png" alt="">
-          </div>
-          <div class="product__content">
-            <h3 class="product__title">
-              <a href="#">iPad</a>
-            </h3>
-            <div class="product__text">
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <div class="item">
+          <div class="product">
+            <div class="product__img">
+              <img src="./img/popular-products/03.png" alt="">
             </div>
-            <div class="product__price">$ 610.00 USD</div>
-            <div class="product__btns">
-              <button class="product__add btn">Add to Basket</button>
+            <div class="product__content">
+              <h3 class="product__title">
+                <a href="#">MacBook Air M1</a>
+              </h3>
+              <div class="product__text">
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+              </div>
+              <div class="product__price">$ 1,009.00 USD</div>
+              <div class="product__btns">
+                <button class="product__add btn">Add to Basket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="product__img">
+              <img src="./img/popular-products/04.png" alt="">
+            </div>
+            <div class="product__content">
+              <h3 class="product__title">
+                <a href="#">iPad</a>
+              </h3>
+              <div class="product__text">
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+              </div>
+              <div class="product__price">$ 610.00 USD</div>
+              <div class="product__btns">
+                <button class="product__add btn">Add to Basket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="product__img">
+              <img src="./img/popular-products/05.png" alt="">
+            </div>
+            <div class="product__content">
+              <h3 class="product__title">
+                <a href="#">Watch</a>
+              </h3>
+              <div class="product__text">
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+              </div>
+              <div class="product__price">$ 350.00 USD</div>
+              <div class="product__btns">
+                <button class="product__add btn">Add to Basket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="product__img">
+              <img src="./img/popular-products/06.png" alt="iPhone 7 Plus">
+            </div>
+            <div class="product__content">
+              <h3 class="product__title">
+                <a href="#">iPhone 7 Plus</a>
+              </h3>
+              <div class="product__text">
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+              </div>
+              <div class="product__price">$ 890.00 USD</div>
+              <div class="product__btns">
+                <button class="product__add btn">Add to Basket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="product__img">
+              <img src="./img/popular-products/07.png" alt="iPhone X">
+            </div>
+            <div class="product__content">
+              <h3 class="product__title">
+                <a href="#">iPhone X</a>
+              </h3>
+              <div class="product__text">
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+              </div>
+              <div class="product__price">$ 1090.00 USD</div>
+              <div class="product__btns">
+                <button class="product__add btn">Add to Basket</button>
+              </div>
             </div>
           </div>
         </div>
@@ -305,8 +375,10 @@
         </div>
         <form class="subscribe-form">
           <div class="subscribe-form__content">
-            <input type="email" name="email" class="subscribe-form__input" placeholder="Your email">
-            <button type="submit" class="subscribe-form__btn">Subscribe</button>
+            <div class="subscribe-form__group">
+              <input type="email" name="email" class="subscribe-form__input" placeholder="Your email" required>
+              <button type="submit" class="subscribe-form__btn">Subscribe</button>
+            </div>
           </div>
         </form>
       </div>
@@ -318,6 +390,14 @@
   <footer class="footer">
   <div class="container">
     <div class="footer-row">
+      <div class="social-icons">
+        <a href="#">
+          <img src="/icons/LinkedIn.svg" alt="LinkedIn">
+        </a>
+        <a href="#">
+          <img src="/icons/youtube.svg" alt="Youtube">
+        </a>
+      </div>
       <div class="footer__logo">
         <img src="./icons/logo.svg" alt="Logo">
         <div class="footer__text">

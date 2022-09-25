@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	$('.owl-carousel').owlCarousel({
+	$('.slide-one').owlCarousel({
 		items: 1,
 		loop:true,
 		margin:10,
@@ -9,19 +9,54 @@ document.addEventListener('DOMContentLoaded', () => {
 			'<span class="slider__arrow slider__prev"></span>',
 			'<span class="slider__arrow slider__next"></span>'
 		],
+		animateOut: 'fadeOut',
+		autoplay: true,
+		autoplayTimeout: 6000,
+	})
+
+	$('.slide-two').owlCarousel({
+		items: 4,
+		loop:true,
+		nav:false,
+		dots: false,
+		margin: 10,
 		autoplay: true,
 		autoplayTimeout: 7000,
-		// responsive:{
-		// 	0:{
-		// 		items:1
-		// 	},
-		// 	600:{
-		// 		items:3
-		// 	},
-		// 	1000:{
-		// 		items:5
-		// 	}
-		// }
+		responsive:{
+			0:{
+				items:1
+			},
+			550: {
+				items:2
+			},
+			769:{
+				items:2
+			},
+			1065:{
+				items:4
+			}
+		}
+	})
+
+
+	//Nav icon
+	const navBtn = document.querySelector('.nav__toggle')
+	const menuIcon = document.querySelector('.menu-icon')
+	const nav = document.querySelector('.nav')
+	const mobileLinks = nav.querySelectorAll('a[href*="#"]')
+
+	navBtn.addEventListener('click', () => {
+		menuIcon.classList.toggle('menu-icon-active')
+		nav.classList.toggle('nav--mobile')
+		document.body.classList.toggle('no-scroll')
+	})
+
+	mobileLinks.forEach(link => {
+		link.addEventListener('click', () => {
+			menuIcon.classList.toggle('menu-icon-active')
+			nav.classList.toggle('nav--mobile')
+			document.body.classList.toggle('no-scroll')
+		})
 	})
 
 //	Link scroll
